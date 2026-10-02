@@ -352,3 +352,7 @@ section{position:relative}
   .buybar .btn{padding:0 16px;font-size:15px}
 }
 .story-text{position:relative;z-index:2}
+/* Kein seitliches Scrollen auf dem Handy */
+html,body{overflow-x:hidden}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+.mq-wrap{position:relative;z-index:2;overflow:hidden;padding:30px 0;margin:-30px 0}
